@@ -1,6 +1,6 @@
 on: push
   # push: 
-  #   branches: [ feat/build]
+  #   branches: [ feat/build_simple_website]
 jobs:
   build-and-push:
     name: build and push image
@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/devops-td:devops
+          tags: ${{ secrets.DOCKER_USERNAME }}/devops-td:08042hua
