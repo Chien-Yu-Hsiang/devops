@@ -1,6 +1,6 @@
 on: push
   # push: 
-  #   branches: [ feat/base_site ]
+  #   branches: [ feat/build]
 jobs:
   build-and-push:
     name: build and push image
@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/checking:mytest3
+          tags: ${{ secrets.DOCKER_USERNAME }}/devops-td:devops
